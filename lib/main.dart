@@ -11,7 +11,7 @@ Future<void> main() async {
   await Hive.initFlutter();
 
   /// Register Hive Adapter
-  Hive.registerAdapter<Task>(TaskAdapter());
+  // Hive.registerAdapter<Task>(TaskAdapter());
 
   /// Open box
   var box = await Hive.openBox<Task>("tasksBox");
